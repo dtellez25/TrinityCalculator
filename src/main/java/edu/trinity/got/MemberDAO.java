@@ -21,6 +21,8 @@ public interface MemberDAO {
 
     List<Member> houseByDob(House house);
 
+    Optional<Member> lowestSalary();
+
     List<Member> kingsByNameDesc();
 
     double averageSalary();

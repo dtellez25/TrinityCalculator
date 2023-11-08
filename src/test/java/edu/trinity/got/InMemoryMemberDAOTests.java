@@ -203,6 +203,14 @@ public class InMemoryMemberDAOTests {
     }
 
     @Test
+    public void lowestSalary() {
+        Optional<Member> member = dao.lowestSalary();
+
+        assertThat(member).isPresent();
+        assertThat(member.get().name()).isEqualTo("Bran");
+    }
+
+    @Test
     public void houseStats() {
         Map<House, DoubleSummaryStatistics> stats = dao.houseStats();
         assertAll(
