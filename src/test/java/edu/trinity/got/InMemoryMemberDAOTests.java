@@ -202,6 +202,7 @@ public class InMemoryMemberDAOTests {
 
     }
 
+    //extra test
     @Test
     public void lowestSalary() {
         Optional<Member> member = dao.lowestSalary();

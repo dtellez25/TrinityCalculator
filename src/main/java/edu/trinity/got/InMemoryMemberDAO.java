@@ -93,6 +93,7 @@ public class InMemoryMemberDAO implements MemberDAO {
     }
 
     /**
+     * extra implementation
      * Who has the lowest salary?
      */
     @Override
